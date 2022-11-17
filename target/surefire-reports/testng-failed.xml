@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="3" parallel="tests" name="Launch EPAM-0(failed)" verbose="0">
+    <parameter name="platform" value="0"/>
+    <classes>
+      <class name="tests.ChromeTests2">
+        <methods>
+          <include name="tearDown"/>
+          <include name="startUp"/>
+          <include name="launchEPAM"/>
+        </methods>
+      </class> <!-- tests.ChromeTests2 -->
+    </classes>
+  </test> <!-- Launch EPAM-0(failed) -->
+</suite> <!-- Failed suite [Suite] -->
